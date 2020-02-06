@@ -20,4 +20,9 @@ end
 def map_to_square(array)
   new_array = array.map{|n| n**2}
   return new_array
-end 
+end
+
+#Mthod to return a running total when not given a starting point.
+def reduct_to_total(source_array, starting_point = 0)
+  return source_array.reduce() {|sum, n| sum + n}
+end
