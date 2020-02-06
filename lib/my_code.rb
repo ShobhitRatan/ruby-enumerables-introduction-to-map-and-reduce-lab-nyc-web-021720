@@ -14,4 +14,10 @@ end
 def map_to_double(array)
   new_array = array.map{|n| n*2}
   return new_array
+end
+
+#Method to return an array with the original values squared.
+def map_to_square(array)
+  new_array = array.map{|n| n**2}
+  return new_array
 end 
