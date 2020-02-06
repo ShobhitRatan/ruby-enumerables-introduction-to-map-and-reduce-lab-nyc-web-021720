@@ -22,7 +22,18 @@ def map_to_square(array)
   return new_array
 end
 
-#Mthod to return a running total when not given a starting point.
+#Method to return a running total when not given a starting point.
 def reduce_to_total(source_array, starting_point = 0)
   return source_array.reduce() {|sum,n| sum + n}
 end
+
+#Method to return a running total when given a starting point.
+def reduce_to_total(source_array, starting_point = 0)
+  total = starting_point
+  index = 0
+  while index < source_array.size do
+    total += source_array[index]
+    index += 1
+  end
+  total
+end 
