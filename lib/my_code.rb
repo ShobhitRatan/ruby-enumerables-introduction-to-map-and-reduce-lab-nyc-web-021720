@@ -36,4 +36,9 @@ def reduce_to_total(source_array, starting_point = 0)
     index += 1
   end
   total
-end 
+end
+
+#Method to return true when all values are truthy
+def reduce_to_all_true(source_array)
+  return source_array.all? {|word| word}
+end
