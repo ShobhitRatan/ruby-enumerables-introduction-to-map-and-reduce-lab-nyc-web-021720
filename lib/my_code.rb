@@ -42,3 +42,8 @@ end
 def reduce_to_all_true(source_array)
   return source_array.all? {|word| word}
 end
+
+#Method to check whether the truthy value is present or not.
+def reduce_to_any_true(source_array)
+  return source_array.any? {|word| word}
+end 
